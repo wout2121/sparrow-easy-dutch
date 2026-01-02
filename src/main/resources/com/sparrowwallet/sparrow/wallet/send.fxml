@@ -65,7 +65,7 @@
                             <ToggleGroup fx:id="feeSelectionToggleGroup" />
                         </toggleGroup>
                         <buttons>
-                            <ToggleButton fx:id="targetBlocksToggle" text="Kies Blokken" 
+                            <!--<ToggleButton fx:id="targetBlocksToggle" text="Kies Blokken" 
                             minWidth="140" 
 toggleGroup="$feeSelectionToggleGroup">
                                 <tooltip>
@@ -74,8 +74,8 @@ toggleGroup="$feeSelectionToggleGroup">
                                 <userData>
                                     <FeeRatesSelection fx:constant="BLOCK_TARGET"/>
                                 </userData>
-                            </ToggleButton>
-                            <ToggleButton fx:id="mempoolSizeToggle" text="Mempool Grootte"                                                      minWidth="140" 
+                            </ToggleButton> -->
+                            <!--<ToggleButton fx:id="mempoolSizeToggle" text="Mempool Grootte"                                                      minWidth="140" 
 toggleGroup="$feeSelectionToggleGroup">
                                 <tooltip>
                                     <Tooltip text="Bepaal de kost op basis van huidige mempool grootte"/>
@@ -83,7 +83,7 @@ toggleGroup="$feeSelectionToggleGroup">
                                 <userData>
                                     <FeeRatesSelection fx:constant="MEMPOOL_SIZE"/>
                                 </userData>
-                            </ToggleButton>
+                            </ToggleButton> -->
                             <ToggleButton fx:id="recentBlocksToggle" text="Recente Blokken"
                             minWidth="140"
 toggleGroup="$feeSelectionToggleGroup">

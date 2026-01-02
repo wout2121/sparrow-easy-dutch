@@ -39,13 +39,13 @@ public class TransactionsTreeTable extends CoinTreeTable {
         amountCol.setSortable(true);
         getColumns().add(amountCol);
 
-        TreeTableColumn<Entry, Number> balanceCol = new TreeTableColumn<>("Balans");
-        balanceCol.setCellValueFactory((TreeTableColumn.CellDataFeatures<Entry, Number> param) -> {
-            return param.getValue().getValue() instanceof TransactionEntry ? ((TransactionEntry)param.getValue().getValue()).balanceProperty() : new ReadOnlyObjectWrapper<>(null);
-        });
-        balanceCol.setCellFactory(p -> new CoinCell());
-        balanceCol.setSortable(true);
-        getColumns().add(balanceCol);
+      //  TreeTableColumn<Entry, Number> balanceCol = new TreeTableColumn<>("Balans"); 
+      //  balanceCol.setCellValueFactory((TreeTableColumn.CellDataFeatures<Entry, Number> param) -> {
+        //    return param.getValue().getValue() instanceof TransactionEntry ? // ((TransactionEntry)param.getValue().getValue()).balanceProperty() : new ReadOnlyObjectWrapper<>(null);
+        //}); 
+        //balanceCol.setCellFactory(p -> new CoinCell());
+        //balanceCol.setSortable(true);
+        //getColumns().add(balanceCol);
 
         setPlaceholder(getDefaultPlaceholder(rootEntry.getWallet()));
         setEditable(true);

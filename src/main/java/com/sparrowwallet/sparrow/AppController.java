@@ -118,6 +118,8 @@ private void changeWalletIcon() {
         }
     }
 }
+
+
 @FXML
 private void changeAppTitle() {
     Stage mainStage = (Stage) tabs.getScene().getWindow();

@@ -42,7 +42,7 @@
                     </Field>
                     <Field fx:id="derivationField" text="Derivation:">
                         <CopyableLabel fx:id="derivationPath" />
-                    </Field>
+                    </Field>  
                     <Field fx:id="lastUsedField" text="Laatst gebruikt:">
                         <Label fx:id="lastUsed" />
                     </Field>
@@ -58,9 +58,9 @@
 
 
             <Separator styleClass="form-separator" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-
+<!--
             <Form GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2">
-                <Fieldset inputGrow="SOMETIMES" text="Required ScriptPubKey">
+               <Fieldset inputGrow="SOMETIMES" text="Required ScriptPubKey">
                     <Field text="Script:">
                         <VirtualizedScrollPane>
                             <content>
@@ -68,21 +68,21 @@
                             </content>
                         </VirtualizedScrollPane>
                     </Field>
-                </Fieldset>
+                </Fieldset>  
             </Form>
-
-            <Form GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+-->
+  <!--          <Form GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3">
                 <Fieldset inputGrow="SOMETIMES" text="Output Descriptor">
-                    <Field text="Descriptor:">
+                    <Field text="Descriptor:">  
                         <VirtualizedScrollPane>
                             <content>
                                 <SelectableCodeArea fx:id="outputDescriptor" editable="false" wrapText="true" prefHeight="68" maxHeight="68" styleClass="uneditable-codearea" />
                             </content>
                         </VirtualizedScrollPane>
                     </Field>
-                </Fieldset>
+                </Fieldset> 
             </Form>
-
+-->
         </GridPane>
     </center>
     <bottom>

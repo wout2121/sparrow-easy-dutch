@@ -936,7 +936,7 @@ public class SendController extends WalletFormController implements Initializabl
 
             Double lowestBlocksRate = targetBlocksFeeRates.get(TARGET_BLOCKS_RANGE.get(TARGET_BLOCKS_RANGE.size() - 1));
             if(lowestBlocksRate >= minFeeRate && feeRateAmt < (minFeeRate + ((lowestBlocksRate - minFeeRate) / 2)) && !isPayjoinTx()) {
-                feeRatePriority.setText("Try Then Replace");
+                feeRatePriority.setText("Te laag ");
                 feeRatePriority.setTooltip(new Tooltip("Send a transaction, verify it appears in the destination wallet, then RBF to get it confirmed or sent to another address"));
                 feeRatePriorityGlyph.setStyle("-fx-text-fill: #7eb7c9cc");
                 feeRatePriorityGlyph.setIcon(FontAwesome5.Glyph.PLUS_CIRCLE);

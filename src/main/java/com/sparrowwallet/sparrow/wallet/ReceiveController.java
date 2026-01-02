@@ -59,11 +59,11 @@ public class ReceiveController extends WalletFormController implements Initializ
     @FXML
     private ImageView qrCode;
 
-    @FXML
-    private ScriptArea scriptPubKeyArea;
+    //@FXML
+    //private ScriptArea scriptPubKeyArea;
 
-    @FXML
-    private SelectableCodeArea outputDescriptor;
+   // @FXML
+   // private SelectableCodeArea outputDescriptor;
 
     @FXML
     private Button displayAddress;
@@ -79,7 +79,7 @@ public class ReceiveController extends WalletFormController implements Initializ
 
     @Override
     public void initializeView() {
-        initializeScriptField(scriptPubKeyArea);
+      //  initializeScriptField(scriptPubKeyArea); //
 
         displayAddress.managedProperty().bind(displayAddress.visibleProperty());
         displayAddress.setVisible(false);
@@ -113,17 +113,17 @@ public class ReceiveController extends WalletFormController implements Initializ
             qrCode.setImage(qrImage);
         }
 
-        scriptPubKeyArea.clear();
-        scriptPubKeyArea.appendScript(nodeEntry.getOutputScript(), null, null);
+        //scriptPubKeyArea.clear();
+        //scriptPubKeyArea.appendScript(nodeEntry.getOutputScript(), null, null);
 
-        outputDescriptor.clear();
-        outputDescriptor.append(nodeEntry.getOutputDescriptor(), "descriptor-text");
+        //outputDescriptor.clear();
+        //outputDescriptor.append(nodeEntry.getOutputDescriptor(), "descriptor-text");
 
         updateDisplayAddress(AppServices.getDevices());
     }
 
     private void updateDerivationPath(NodeEntry nodeEntry) {
-        derivationPath.setText(getDerivationPath(nodeEntry.getNode()));
+        derivationPath.setText(getDerivationPath(nodeEntry.getNode())); //
     }
 
     private void updateLastUsed() {
@@ -283,12 +283,12 @@ public class ReceiveController extends WalletFormController implements Initializ
 
         address.setText("");
         label.setText("");
-        derivationPath.setText("");
+       // derivationPath.setText("");
         lastUsed.setText("");
         lastUsed.setGraphic(null);
         qrCode.setImage(null);
-        scriptPubKeyArea.clear();
-        outputDescriptor.clear();
+        //scriptPubKeyArea.clear();
+        //outputDescriptor.clear();
         this.currentEntry = null;
     }
 

@@ -1,0 +1,40 @@
+> Task :buildSrc:compileJava UP-TO-DATE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :drongo:compileJava UP-TO-DATE
+> Task :drongo:processResources UP-TO-DATE
+> Task :drongo:classes UP-TO-DATE
+> Task :drongo:jar UP-TO-DATE
+> Task :lark:compileJava UP-TO-DATE
+> Task :lark:processResources UP-TO-DATE
+> Task :lark:classes UP-TO-DATE
+> Task :lark:jar UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+
+> Task :run
+Exception in Application start method
+
+> Task :run FAILED
+
+erbose', 'true'FAILURE: Build failed with an exception. systemProperty 'javafx.verbose', 'true'
+}* What went wrong:
+t./gradlew run --console=plain --warning-mode=all --info 2>&1 > full_debug.log
+cat full_debug.log | less
+grep -r "public static void main" src/main/java/com/sparrowwallet/sparrow/ | head -1
+
+
+Execution failed for task ':run'.
+> Process 'command '/usr/lib/jvm/temurin-22-jdk-amd64/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info orX
+X
+x
+
